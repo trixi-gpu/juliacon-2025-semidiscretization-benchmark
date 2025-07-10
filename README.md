@@ -18,7 +18,7 @@ julia --project=.
 ] instantiate
 ```
 
-After dependencies have been fetched, precompile the core module so everything is up to date:
+After dependencies have been fetched, precompile the core module:
 ```
 include("src/TrixiCUDA.jl")
 ```
