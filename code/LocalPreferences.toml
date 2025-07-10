@@ -1,0 +1,4 @@
+[Trixi]
+log = "log_Base"
+loop_vectorization = false
+sqrt = "sqrt_Base"
