@@ -29,7 +29,7 @@ include("benchmark/benchmark.jl")
 ```
 You'll see progress and information printed to the terminal as each example runs, for example:
 ```
-include("benchmark/benchmark.jl")
+julia> include("benchmark/benchmark.jl")
 =============== Mode: Fixed DOFs Approach ===============
 [1] Linear Advection Equation (Basic), running examples_fixed_dofs\advection_basic_1d.jl
 [ Info: Benchmarking rhs! on CPU
