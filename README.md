@@ -1,4 +1,6 @@
 # juliacon-2025-semidiscretization-benchmark
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) [![DOI](https://zenodo.org/badge/1017467245.svg)](https://doi.org/10.5281/zenodo.15864940)
+
 This repository provides the source code and instructions to reproduce the CPU and GPU semidiscretization performance benchmarks presented in the JuliaCon 2025 talk [TrixiCUDA.jl: CUDA Support for Solving Hyperbolic PDEs on GPU](https://pretalx.com/juliacon-2025/talk/EFYUBD/).
 
 ## Reproduce the Benchmarks
