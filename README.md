@@ -41,7 +41,6 @@ julia> include("benchmark/benchmark.jl")
 [ Info: Benchmarking rhs! on CPU
 [ Info: Benchmarking rhs! on GPU
 Saved: ..\plots\fixed_dofs_approach_linear_advection_equation_basic.png
-[1] Linear Advection Equation (Mortar), running examples_fixed_dofs\advection_mortar_2d.jl
 ...
 =============== Mode: Variable DOFs Approach ===============
 [1] Linear Advection Equation (Basic), running examples_variable_dofs\advection_basic_1d.jl
