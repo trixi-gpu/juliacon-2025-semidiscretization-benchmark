@@ -60,8 +60,49 @@ Note that benchmarks are conducted using two approaches: (1) fixed DOFs and (2) 
 Once it finishes, all generated figures will be saved in the plots directory. 
 
 ## Sample Benchmark Results
-Sample benchmark results and their key takeaways are available [here](https://trixi-gpu.github.io/benchmark/).
+Sample benchmark figures are available in the [figures](https://github.com/trixi-gpu/juliacon-2025-semidiscretization-benchmark/tree/main/figures) directory, and a complete report can be found [here](https://trixi-gpu.github.io/benchmark/). 
 
+Sample benchmarks were conducted on an NVIDIA RTX 4060 (Ada architecture). The software environment was as follows:
+```bash
+# Julia version information
+julia> versioninfo()
+Julia Version 1.10.9
+Commit 5595d20a28 (2025-03-10)
+Platform Info:
+  OS: Windows (x86_64-w64-mingw32)
+  CPU: 20× 13th Gen Intel® Core™ i9-13900H
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-15.0.7 (ORCJIT, goldmont)
+
+# CUDA version information
+julia> using CUDA; CUDA.versioninfo()
+CUDA runtime 12.6 (artifact installation)
+CUDA driver 12.8
+NVIDIA driver 572.42.0
+
+CUDA libraries:
+  CUBLAS    12.6.4
+  CURAND    10.3.7
+  CUFFT     11.3.0
+  CUSOLVER  11.7.1
+  CUSPARSE  12.5.4
+  CUPTI     2024.3.2 (API 24.0.0)
+  NVML      12.0.0+572.42
+
+Julia packages:
+  CUDA             5.6.1
+  CUDA_Driver_jll  0.10.4+0
+  CUDA_Runtime_jll 0.15.5+0
+
+Toolchain:
+  Julia  1.10.9
+  LLVM   15.0.7
+
+Device:
+  0: NVIDIA GeForce RTX 4060 Laptop GPU (sm_89, 6.706 GiB / 7.996 GiB available)
+```
+Note that results may vary on different GPU models, Julia releases, and CUDA versions. Please take these benchmark results for reference only.
 
 ## Acknowledgment
 Many thanks to the following professors for their guidance on this project:
