@@ -3,32 +3,33 @@ This repository provides the source code and instructions to reproduce the CPU a
 
 ## Reproduce the Benchmarks
 First, clone the repository to your local machine:
-```
+```bash
 git clone https://github.com/trixi-gpu/juliacon-2025-semidiscretization-benchmark.git
 ```
 
 Once the clone completes, move into the source directory:
-```
+```bash
 cd juliacon-2025-semidiscretization-benchmark/code
 ```
 
 Next, start Julia with the project environment and install all required packages:
-```
+```bash
 julia --project=.
 ] instantiate
 ```
 
 After dependencies have been fetched, precompile the core module:
-```
+```bash
 include("src/TrixiCUDA.jl")
 ```
 
 With the module precompiled, run the full benchmark suite:
-```
+```bash
 include("benchmark/benchmark.jl")
 ```
+
 You'll see progress and information printed to the terminal as each example runs, for example:
-```
+```bash
 julia> include("benchmark/benchmark.jl")
 =============== Mode: Fixed DOFs Approach ===============
 [1] Linear Advection Equation (Basic), running examples_fixed_dofs\advection_basic_1d.jl
